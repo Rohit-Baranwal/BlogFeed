@@ -54,19 +54,7 @@ A modern, fully functional **database-driven blogging platform** built from scra
 | Frontend           | Bootstrap 5, jQuery AJAX, Vanilla JS        |
 | Rich Text Editor   | Summernote / TinyMCE / Quill (your choice)  |
 | Styling            | Bootstrap 5 + Custom CSS                    |
-
-## 📂 Project Structure (Key Parts)
-BlogPlatform/
-├── Areas/
-│   └── Admin/                # Admin controllers & views
-├── Controllers/
-├── Models/                   # EF Core entities
-├── Views/
-├── wwwroot/
-│   ├── uploads/              # Post featured images
-│   └── lib/                  # Bootstrap, jQuery, RichText
-├── Data/                     # DbContext + Migrations
-└── Services/                 # (Optional) Business logic                
+          
 
 ## 🛠️ Setup & Running Locally
 
