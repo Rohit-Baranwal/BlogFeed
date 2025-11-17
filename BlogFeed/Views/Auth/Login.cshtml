@@ -1,0 +1,49 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    .content-wrapper {
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    }
+
+</style>
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h2>@ViewData["Title"]</h2>
+        </div>
+        <div class="col-12 col-md-6 text-end">
+            <a asp-action="Index" asp-controller="Post" class="btn btn-primary rounded ">Back to List</a>
+        </div>
+    </div>
+    <hr />
+    <form asp-action="Login" method="post" enctype="multipart/form-data">
+        <!-- Validation Summary -->
+        <div class="validation-summary">
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Login</button>
+        <a asp-action="Index" class="btn btn-secondary mt-3" asp-controller="Post">Back to List</a>
+    </form>
+    <hr />
+</div>
